@@ -13,7 +13,7 @@ export const CreateClient = ({ PostFetch }) => {
   });
   const [hasError, setHasError] = useState('');
   const birthDateIsValid = (date) => {
-    return /^\d{4}[\/.]\d{1,2}[\/.]\d{1,2}$/.test(date);
+    return /^\d{4}[/\t/g.]\d{1,2}[/\t/g.]\d{1,2}$/.test(date);
   };
   const handleForm = (e) => {
     e.preventDefault();
